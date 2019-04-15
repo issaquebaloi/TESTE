@@ -19,6 +19,10 @@ if (isset($_POST['inputNumber'])) {
 	if (preg_match('/[^a-zA-Z ]+/', $_POST['inputNumber'], $matches)) { $nameInput = 0; $destinyNumber = $errorMessageName;}
 	else { $nameInput = $_POST['inputNumber']; }
 }
+if (isset($_POST['inputNumber'])) { 
+	if (preg_match('/[^a-zA-Z ]+/', $_POST['inputNumber'], $matches)) { $nameInput = 0; $destinyNumber = $errorMessageName;}
+	else { $nameInput = $_POST['inputNumber']; }
+}
 
 $inputtoArr = explode(" ", $nameInput);
 $countNames = count($inputtoArr);
